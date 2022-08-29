@@ -3,7 +3,7 @@ import Card from "./Card.jsx";
 import emojipedia from "../emojipedia";
 
 function createCard(data) {
-  return <Card emoji={data.emoji} name={data.name} meaning={data.meaning} />;
+  return <Card key= {data.id} emoji={data.emoji} name={data.name} meaning={data.meaning} />;
 }
 
 function App() {
